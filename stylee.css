@@ -1,0 +1,399 @@
+/* 1. WARNA UTAMA */
+:root {
+    --purple: #6C3CE9;
+    --purple-hover: #5425C7;
+    --purple-dark: #2D174F;
+    --purple-soft: #EDE5FF;
+    --purple-pale: #F8F5FF;
+    --lavender: #DCCBFF;
+    --text-dark: #25213A;
+    --text-muted: #6F6A80;
+    --white: #FFFFFF;
+
+    --bs-primary: #6C3CE9;
+    --bs-primary-rgb: 108, 60, 233;
+    --bs-link-color: #6C3CE9;
+    --bs-link-hover-color: #5425C7;
+}
+
+/* 2. PENGATURAN DASAR */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.7;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+a {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* 3. NAVBAR */
+.navbar {
+    background: var(--purple) !important;
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.navbar-brand span {
+    color: #FFE082 !important;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.88) !important;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: #FFE082 !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.2);
+}
+
+/* 4. HOME / HERO */
+.hero-section,
+.hero {
+    background: linear-gradient(135deg, #FBF9FF 0%, #EDE5FF 55%, #DCCBFF 100%) !important;
+    overflow: hidden;
+}
+
+.hero-section .row {
+    min-height: 650px;
+}
+
+.hero h1,
+.hero-section h1 {
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.hero h1 span,
+.hero-section h1 span {
+    color: var(--purple) !important;
+}
+
+.hero p,
+.hero-section p {
+    line-height: 1.8;
+}
+
+.profile-img {
+    object-fit: cover;
+    border: 7px solid var(--white);
+    border-radius: 48% 48% 45% 45%;
+    box-shadow: 0 18px 45px rgba(108, 60, 233, 0.20) !important;
+}
+
+/* 5. TOMBOL */
+.btn-primary {
+    color: var(--white) !important;
+    background-color: var(--purple) !important;
+    border-color: var(--purple) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--purple-hover) !important;
+    border-color: var(--purple-hover) !important;
+}
+
+.btn-outline-primary {
+    color: var(--purple) !important;
+    border-color: var(--purple) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: var(--white) !important;
+    background-color: var(--purple) !important;
+    border-color: var(--purple) !important;
+}
+
+.btn-success {
+    color: var(--white) !important;
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* 6. JUDUL SECTION */
+.section-title h2,
+h2.fw-bold {
+    color: var(--text-dark);
+}
+
+.section-title>p:first-child,
+.text-primary {
+    color: var(--purple) !important;
+}
+
+.section-title>p.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+/* 7. ABOUT, SKILLS, PROJECTS */
+#about,
+#projects {
+    background-color: var(--white);
+}
+
+#skills,
+#contact,
+.bg-light {
+    background-color: var(--purple-pale) !important;
+}
+
+.about-card,
+.skill-card,
+.project-card,
+.custom-card {
+    background-color: var(--white);
+    border: 1px solid #F0EAFE !important;
+    border-radius: 16px;
+    box-shadow: 0 8px 26px rgba(65, 35, 120, 0.07) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(108, 60, 233, 0.14) !important;
+}
+
+.about-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 15px;
+    background-color: var(--purple-soft);
+    font-size: 1.7rem;
+}
+
+.card-title,
+.card h5 {
+    color: var(--text-dark);
+}
+
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+/* 8. SKILL PROGRESS BAR */
+.progress {
+    height: 9px;
+    overflow: hidden;
+    background-color: #E9E1FA;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    background-color: var(--purple) !important;
+    border-radius: 20px;
+}
+
+/* 9. PROJECTS */
+.project-cover {
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.6rem;
+    background-color: var(--purple-soft) !important;
+}
+
+.cover-blue,
+.cover-pink,
+.cover-green {
+    background-color: var(--purple-soft) !important;
+}
+
+.badge.text-bg-primary {
+    background-color: var(--purple) !important;
+}
+
+.badge.text-bg-danger,
+.badge.text-bg-success {
+    color: var(--purple-dark) !important;
+    background-color: var(--purple-soft) !important;
+}
+
+/* 10. CONTACT */
+.contact-section,
+#contact {
+    background: var(--purple-pale) !important;
+}
+
+.contact-form,
+.contact-card {
+    background-color: var(--white);
+    border: 1px solid #F0EAFE;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(65, 35, 120, 0.08);
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact-box>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background-color: var(--purple-soft) !important;
+    font-size: 1.35rem;
+}
+
+.contact-box a {
+    color: var(--purple);
+    overflow-wrap: anywhere;
+}
+
+.contact-box a:hover {
+    color: var(--purple-hover);
+    text-decoration: underline !important;
+}
+
+.form-label {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 12px 14px;
+    color: var(--text-dark);
+    border: 1px solid #DDD3F4;
+    border-radius: 10px;
+}
+
+.form-control::placeholder {
+    color: #9A93AA;
+}
+
+.form-control:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 0 0.22rem rgba(108, 60, 233, 0.14);
+}
+
+/* 11. FOOTER */
+footer,
+footer.bg-dark {
+    color: var(--white);
+    background-color: var(--purple-dark) !important;
+}
+
+footer h5 span {
+    color: #DCCBFF !important;
+}
+
+.footer-link,
+footer a {
+    color: #DCCBFF;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+footer a:hover {
+    color: var(--white);
+}
+
+/* 12. RESPONSIVE UNTUK HP DAN TABLET */
+@media (max-width: 991.98px) {
+    .navbar .nav-link {
+        padding: 10px 0;
+    }
+
+    .hero-section .row {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .hero-section,
+    .hero {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+    }
+
+    .hero-section h1,
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .profile-img {
+        width: 230px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .section-title h2,
+    h2.fw-bold {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        margin-bottom: 2rem !important;
+    }
+
+    .contact-form,
+    .contact-card {
+        padding: 22px !important;
+    }
+}
+
+/* 13. AKSESIBILITAS: KURANGI ANIMASI JIKA DIPILIH PENGGUNA */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
